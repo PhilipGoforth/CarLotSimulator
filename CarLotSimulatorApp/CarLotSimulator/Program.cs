@@ -19,24 +19,24 @@ namespace CarLotSimulator
             Car myCar = new Car(1994, "Jeep", "Cherokee", true);
             myCar.EngineNoise = "Knocking";
             myCar.HonkNoise = "Beep!";
-            myCar.MakeEngineNoise(myCar.EngineNoise);
-            myCar.MakeHonkNoise(myCar.HonkNoise);
+            myCar.MakeEngineNoise();
+            myCar.MakeHonkNoise();
 
             myCarLot.cars.Add(myCar);
 
             var myOtherCar = new Car(2004, "Porsche", "Cayenne", true);
             myOtherCar.EngineNoise = "Whining";
             myOtherCar.HonkNoise = "Honk!";
-            myOtherCar.MakeEngineNoise(myOtherCar.EngineNoise);
-            myOtherCar.MakeHonkNoise(myOtherCar.HonkNoise);
+            myOtherCar.MakeEngineNoise();
+            myOtherCar.MakeHonkNoise();
 
             myCarLot.cars.Add(myOtherCar);
 
             Car myThirdCar = new Car() {Year = 1932, Make = "Ford", Model = "Model T", IsDriveable = true };
             myThirdCar.EngineNoise = "Meowing";
             myThirdCar.HonkNoise = "AOOOGA!";
-            myThirdCar.MakeEngineNoise(myThirdCar.EngineNoise);
-            myThirdCar.MakeHonkNoise(myThirdCar.HonkNoise);
+            myThirdCar.MakeEngineNoise();
+            myThirdCar.MakeHonkNoise();
 
             myCarLot.cars.Add(myThirdCar);
             //Set the properties for each of the cars
