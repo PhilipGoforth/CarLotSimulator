@@ -32,7 +32,7 @@ namespace CarLotSimulator
 
             myCarLot.cars.Add(myOtherCar);
 
-            Car myThirdCar = new Car(1932, "Ford", "Model T", true);
+            Car myThirdCar = new Car() {Year = 1932, Make = "Ford", Model = "Model T", IsDriveable = true };
             myThirdCar.EngineNoise = "Meowing";
             myThirdCar.HonkNoise = "AOOOGA!";
             myThirdCar.MakeEngineNoise(myThirdCar.EngineNoise);
