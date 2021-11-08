@@ -14,13 +14,14 @@ namespace CarLotSimulator
             //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
             //The methods should take one string parameter: the respective noise property
             var myCarLot = new CarLot();
-
+            
             //Now that the Car class is created we can instanciate 3 new cars
             Car myCar = new Car(1994, "Jeep", "Cherokee", true);
             myCar.EngineNoise = "Knocking";
             myCar.HonkNoise = "Beep!";
             myCar.MakeEngineNoise();
             myCar.MakeHonkNoise();
+            CarLot.AddCar();
 
             myCarLot.cars.Add(myCar);
 
@@ -29,6 +30,7 @@ namespace CarLotSimulator
             myOtherCar.HonkNoise = "Honk!";
             myOtherCar.MakeEngineNoise();
             myOtherCar.MakeHonkNoise();
+            CarLot.AddCar();
 
             myCarLot.cars.Add(myOtherCar);
 
@@ -37,6 +39,7 @@ namespace CarLotSimulator
             myThirdCar.HonkNoise = "AOOOGA!";
             myThirdCar.MakeEngineNoise();
             myThirdCar.MakeHonkNoise();
+            CarLot.AddCar();
 
             myCarLot.cars.Add(myThirdCar);
             //Set the properties for each of the cars
