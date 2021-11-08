@@ -12,7 +12,7 @@ namespace CarLotSimulator
         public static void AddCar()
         {
             numberOfCars++;
-            Console.WriteLine($"\n{numberOfCars} cars on the lot.\n");
+            Console.WriteLine($"\n{numberOfCars} car added to the lot.\n");
         }
         public List<Car> cars = new List<Car>();
 
