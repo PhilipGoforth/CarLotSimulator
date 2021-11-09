@@ -21,7 +21,7 @@ namespace CarLotSimulator
             myCar.HonkNoise = "Beep!";
             myCar.MakeEngineNoise();
             myCar.MakeHonkNoise();
-            CarLot.AddCar();
+            Console.WriteLine(CarLot.numberOfCars);
 
             myCarLot.cars.Add(myCar);
 
@@ -30,7 +30,7 @@ namespace CarLotSimulator
             myOtherCar.HonkNoise = "Honk!";
             myOtherCar.MakeEngineNoise();
             myOtherCar.MakeHonkNoise();
-            CarLot.AddCar();
+            Console.WriteLine(CarLot.numberOfCars);
 
             myCarLot.cars.Add(myOtherCar);
 
@@ -39,7 +39,7 @@ namespace CarLotSimulator
             myThirdCar.HonkNoise = "AOOOGA!";
             myThirdCar.MakeEngineNoise();
             myThirdCar.MakeHonkNoise();
-            CarLot.AddCar();
+            Console.WriteLine(CarLot.numberOfCars);
 
             myCarLot.cars.Add(myThirdCar);
             //Set the properties for each of the cars

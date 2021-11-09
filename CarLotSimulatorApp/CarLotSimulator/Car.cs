@@ -8,10 +8,11 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            CarLot.numberOfCars++;
         }
         public Car(int year, string make, string model, bool driveable)
         {
+            CarLot.numberOfCars++;
             Year = year;
             Make = make;
             Model = model;
